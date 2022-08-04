@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mijn huiswerk</title>
+<script
+src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#knop").click(function() {
+var naam = $("#idTekstveld1").val();
+var adres = $("#idTekstveld2").val();
+var woonplaats = $("#idTekstveld3").val();
+var hobby = $("#idTekstveld4").val();
+window.alert(
+"Ik ben " + naam +
+" en mijn adres is " + adres +
+" en mijn woonplaats is " + woonplaats +
+" en mijn favoriete hobby is " + hobby);
+});
+});
+</script>
+</head>
+<body>
+<form>
+Wat is uw naam?
+<input type="text" id="idTekstveld1"><br><br>
+Wat is uw adres?
+<input type="text" id="idTekstveld2"><br><br>
+Wat is uw woonplaats?
+<input type="text" id="idTekstveld3"><br><br>
+Wat is uw favoriete hobby?
+<input type="text" id="idTekstveld4"><br><br>
+<input id="knop" name="knop" type="button"
+value="Klik op deze knop">
+</form>
+</body>
+</html>
